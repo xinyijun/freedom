@@ -1,0 +1,322 @@
+/*
+Theme Name: freedom
+Theme URI: https://github.com/xinyijun/freedom
+Description: A WordPress theme for my blog site
+Author: striveforfreedom
+Author blog: http://blog.striveforfreedom.net/
+Version: 1.0
+Tags: two-columns, fixed-width
+License: GNU General Public License, version 3 (GPLv3)
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+/**************** general ****************/
+
+h1, h2, h3, h4
+{
+    margin: 1em 0em 0.2em 0em;
+}
+
+h1
+{
+    font-size: 21px;
+}
+
+h2
+{
+    font-size: 20px;
+}
+
+h3
+{
+    font-size: 18px;
+}
+
+h4
+{
+    font-size: 15px;
+}
+
+p
+{
+    font-size: 14px;
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+a
+{
+    outline: none;
+    text-decoration: none;
+    color: #7ab80e;
+}
+
+a:hover
+{
+    /*text-decoration: underline;*/
+    opacity: 0.6;
+}
+
+pre
+{
+    border: 1pt solid #AEBDCC;
+    margin: 0.5em 0em;
+    background-color: #817A7B;
+    font-family: menlo, courier, monospace;
+    font-size: 14px;
+    overflow: auto;
+    padding: 5pt;
+}
+
+
+/**************** body ****************/
+.body
+{
+    background-color: #d7d7d9;
+    margin: 0px auto;
+    width: 960px;
+    font-family: Arial,Sans-Serif,'Lucida Grande';
+}
+
+
+/**************** header ****************/
+.body .header
+{
+    background-image: url(images/header.jpg);
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-clip: padding-box;
+    padding: 25px 50px;
+    width: 860px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.body .header .site-name
+{
+    font-family: 'Lobster',sans;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.body .header .site-description
+{
+    color: white;
+    margin: 0px;
+}
+
+/**************** main ****************/
+.body .main
+{
+    background-image: url(images/main.jpg);
+    background-repeat: repeat-y;
+    background-origin: padding-box;
+    background-clip: padding-box;
+    padding: 20px 25px 0px 25px;
+    width: 910px;
+    float: left;
+}
+
+/**************** content ****************/
+.body .content
+{
+    float: left;
+    width: 690px;
+}
+
+.content .post-excerpt
+{
+    margin-bottom: 16px;
+}
+/**************** post info ****************/
+.content .post-info
+{
+    float: left;
+    margin-bottom: 8px;
+    line-height: 1.0;
+}
+
+.content .post-info .post-date
+{
+    float: left;
+    border-radius: 4px;
+    background-color: #7ab80e;
+    text-align: center;
+    padding: 0px 6px;
+    margin-right: 10px;
+}
+
+.content .post-info .post-date a
+{
+    color: white;
+}
+
+.content .post-info .post-other-info
+{
+    float: left;
+    padding: 0px 0px;
+}
+
+.content .post-info .post-date .post-day
+{
+    margin: 0px;
+    border-bottom: 1px solid transparent;
+    padding: 4px 0px 4px 0px;
+}
+
+.content .post-info .post-title
+{
+    margin: 0px;
+    border-bottom: 1px solid black;
+    padding: 4px 0px 4px 0px;
+    word-wrap: break-word;
+}
+
+.content .post-info .post-month-year,
+.content .post-info .post-misc-info
+{
+    margin: 0px;
+    padding: 4px 0px 4px 0px;
+    font-weight: normal;
+}
+
+.content .excerpt-content,
+.content .content-content
+{
+    clear: both;
+    line-height: 1.5;
+}
+
+
+form#commentform .required
+{
+    color: red;
+}
+
+form#commentform input[type="text"]
+{
+    margin-left: 10px;
+    border: 1px solid gray;
+    padding: 1px;
+    height: 20px;
+}
+
+form#commentform textarea
+{
+    border: 1px solid gray;
+    padding: 2px;
+    width: 100%;
+    height: 100px;
+}
+
+/**************** no content ****************/
+.no-content
+{
+    margin: 100px 100px 0px 150px;
+    width: 400px;
+}
+
+.no-content .search-form input[type="text"]
+{
+    width: 320px;
+    border-style: inset outset outset inset;
+}
+
+/**************** sidebar ****************/
+.main .sidebar
+{
+    float: right;
+    width: 202px;
+}
+
+.main .sidebar .widget
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sidebar .search
+{
+    float: left;
+    padding-bottom: 10px;
+}
+
+.search-form,
+.search-form div
+{
+    float: left;
+    width: 100%;
+}
+
+.search-form input[type="text"]
+{
+    float: left;
+    padding: 1px;
+    width: 120px;
+    height: 20px;
+    border-width: 1px;
+    border-style: inset outset outset inset;
+    margin: 0px;
+}
+
+.search-form input[type="submit"]
+{
+    float: right;
+    width: 60px;
+    height: 24px;
+    padding: 1px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin: 0px;
+}
+
+.sidebar .category
+{
+    clear: both;
+}
+
+.sidebar ul
+{
+    margin: 2px 0px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.sidebar ol
+{
+    margin: 2px 0px;
+    padding-left: 0px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.sidebar ul li,
+.sidebar ol li
+{
+    margin: 0px;
+    padding: 0px 0px 4px 0px;
+    font-size: 13px;
+}
+
+/**************** footer ****************/
+.body .footer
+{
+    background-image: url(images/footer.jpg);
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    width: 100%;
+    height: 63px;
+    text-align: center;
+    float: left;
+}
+
+.body .footer span
+{
+    position: relative;
+    top: 35px;
+    font-size: 14px;
+    font-weight: normal;
+}
